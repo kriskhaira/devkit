@@ -1,0 +1,61 @@
+## ------------------------------------------
+## OVERRIDE THE ABOVE ON MACS
+## - Go ahead and use this for your Mac
+## - Tested on Snow Leopard
+## - Kris Khaira
+## ------------------------------------------
+unset MAILCHECK
+export EDITOR=vi
+export CLICOLOR=1
+export LSCOLORS="ExFxCxDxBxegedabagacad"
+export LSCOLORS="gxfxcxdxbxegedabagacad"
+alias flush='sudo dscacheutil -flushcache'
+alias port.start='sudo port selfupdate; sudo port upgrade outdated;'
+alias k='killall'
+alias kd='killall Dock'
+alias kf='killall Finder'
+alias o='open ./'
+alias m='mate'
+alias mp='echo ""; pwgen -c -n -s -B -y 14 -1 10; echo""'
+#This fixes the blue tint problem as described here: http://tinyurl.com/mac-blue-tint
+alias fixtint='/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Resources/DMProxy'
+alias mailoptimize="sqlite3 ~/Library/Mail/Envelope\ Index vacuum index; sqlite3 ~/Library/Mail/Envelope\ Index vacuum subjects;"
+alias showhidden='defaults write com.apple.finder AppleShowAllFiles -bool TRUE; killall Finder'
+alias hidehidden='defaults write com.apple.finder AppleShowAllFiles -bool FALSE; killall Finder'
+alias growl="growlnotify -m"
+alias ok='afplay /System/Library/Sounds/Glass.aiff'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CFa'
+alias ag='ack'
+
+#alias svndiff='svn diff --diff-cmd ~/bin/svnopendiffshim.py' 
+alias ss='svn-color status'
+alias svnfmdiff='svn diff --diff-cmd fmdiff' 
+alias svnrsync='rsync -av --exclude=.svn --delete'
+
+## Python/Django ##
+PYTHON_PACKAGES='/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages'
+alias px='source $PYTHON_PACKAGES/pinax/bin/activate'
+alias dj='python manage.py'
+alias djrun='python manage.py runserver'
+alias djrun.vf='python manage.py runserver 172.16.236.1:8001'
+alias djsyncdb='python manage.py syncdb'
+alias djrebuild='python manage.py index --rebuild'
+alias djclean='px; echo ""; djsyncdb; echo ""; djrebuild; echo ""'
+alias djnew='django-admin.py startproject mysite'
+
+## System Monitoring
+alias cpu='top -FR -o cpu -n 10'
+
+## Mac tracking speed
+alias getmousespeed='defaults read -g com.apple.mouse.scaling'
+alias mousespeed='defaults write -g com.apple.mouse.scaling'
+
+# LAMP
+alias ap.start="sudo apachectl start"
+alias ap.stop="sudo apachectl stop"
+alias ap.rs="sudo apachectl restart"
+alias ms.start='sudo cd /opt/local ; sudo /opt/local/lib/mysql5/bin/mysqld_safe &' #macports
+alias ms.stop='sudo /opt/local/bin/mysqladmin5 -u root -p shutdown' #macports
+alias isdp="is-drupal"
