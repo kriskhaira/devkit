@@ -1,8 +1,7 @@
 ## ------------------------------------------
-## OVERRIDE THE ABOVE ON MACS
+## OVERRIDE THE LINUX BASH.BASHRC
 ## - Go ahead and use this for your Mac
 ## - Tested on Snow Leopard
-## - Kris Khaira
 ## ------------------------------------------
 unset MAILCHECK
 export EDITOR=vi
@@ -28,6 +27,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CFa'
 alias ag='ack'
+alias t="vi ~/Desktop/TODO.txt"
 
 #alias svndiff='svn diff --diff-cmd ~/bin/svnopendiffshim.py' 
 alias ss='svn-color status'

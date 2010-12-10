@@ -41,7 +41,6 @@ alias showpublickey='cat ~/.ssh/id_rsa.pub'
 alias pastepublickey='mkdir ~/.ssh; chmod 700 ~/.ssh; cd ~/.ssh; touch authorized_keys; chmod 600 authorized_keys; vi authorized_keys'
 alias ssh.ls='cd ~/.ssh/; ls -alF'
 alias noexe='sudo rm -f *.exe' #Removes all *.exe files in a folder. Good for removing viruses from thumbdrives.
-alias t="vi ~/Documents/todo.txt"
 alias phpinfo='echo "<?php phpinfo(); ?>" | sudo tee -a info.php'
 alias xx='echo; echo "-------------------------------------------------------------------"; echo'
 alias 755folders="find . ./ -type d -exec chmod 755 {} \;"
@@ -51,6 +50,7 @@ alias conn='netstat -nl | grep tcp4' #Active connections
 alias v='vim'
 alias v.='vim .'
 alias ev='vim ~/.vimrc'
+alias ah='alias -p | ack -C ' #alias help
 
 ##  Drupal ##
 SAM=sites/all/modules
