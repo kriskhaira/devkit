@@ -5,6 +5,7 @@
 ## -----------------------------------------------------
 export HISTCONTROL=erasedups
 export ACK_OPTIONS=--type-set=php=.php,.module,.inc,.install
+export EDITOR=vim
 
 ## UBUNTU/DEBIAN ONLY ##
 LOGS=/var/log
@@ -49,6 +50,7 @@ alias 777folders="find . ./ -type d -exec chmod 777 {} \;"
 alias conn='netstat -nl | grep tcp4' #Active connections
 alias v='vim'
 alias v.='vim .'
+alias sv='sudo vim'
 alias ev='vim ~/.vimrc'
 alias ah='alias -p | ack -C ' #alias help
 
