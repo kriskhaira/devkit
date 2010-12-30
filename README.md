@@ -1,5 +1,3 @@
-Useful aliases for both Linux and Mac.
-
 ## Setup .vim
 
     cd ~
