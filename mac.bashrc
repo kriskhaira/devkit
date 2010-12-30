@@ -53,9 +53,14 @@ alias getmousespeed='defaults read -g com.apple.mouse.scaling'
 alias mousespeed='defaults write -g com.apple.mouse.scaling'
 
 # LAMP
-alias ap.start="sudo apachectl start"
-alias ap.stop="sudo apachectl stop"
-alias ap.rs="sudo apachectl restart"
+alias ap.1="sudo apachectl start"
+alias ap.0="sudo apachectl stop"
+alias ap.r="sudo apachectl restart"
 alias ms.start='sudo cd /opt/local ; sudo /opt/local/lib/mysql5/bin/mysqld_safe &' #macports
 alias ms.stop='sudo /opt/local/bin/mysqladmin5 -u root -p shutdown' #macports
 alias isdp="is-drupal"
+
+# PostgreSQL (installed with Homebrew)
+alias pg.1="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg.0="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
