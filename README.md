@@ -1,4 +1,4 @@
-## Setup .vim
+## Set up vim
 
     cd ~
     ln -s ~/path/to/devkit/.vimrc .vimrc 
