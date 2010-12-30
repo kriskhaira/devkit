@@ -1,0 +1,22 @@
+#!/bin/bash
+
+cd ~/.vim/bundle
+
+for file in *; do
+   if [ -d $file ]; then
+      cd $file; git pull
+   fi
+done
+
+# git pull nerdcommenter
+# git pull nerdtree
+# git pull snipmate
+# git pull vim-cucumber
+# git pull fugitive
+# git pull markdown
+# git pull surround
+# git pull tcomment
+# git pull vim-vividchalk
+# git pull vim-colors-mgutz
+# git pull vim-railscasts-theme
+

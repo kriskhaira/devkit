@@ -30,8 +30,10 @@ set ruler
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" -- These were causing problems so I've disabled them --
 " set autoindent
-set smartindent
+" set smartindent
 
 " SET DRUPAL FILES AS PHP
 
@@ -61,4 +63,3 @@ let NERDTreeIgnore=['\.swp$', '.DS_Store', '.git', '.svn']
 set lines=50
 set columns=150
 colorscheme vividchalk
-
