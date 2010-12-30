@@ -45,7 +45,6 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.test set filetype=php
   augroup END
 endif
-syntax on
 
 " if has("gui_running")
   " If the current buffer has never been saved, it will have no name,
@@ -62,4 +61,6 @@ let NERDTreeIgnore=['\.swp$', '.DS_Store', '.git', '.svn']
 
 set lines=50
 set columns=150
-colorscheme vividchalk
+
+syntax on
+colorscheme southwest-fog
