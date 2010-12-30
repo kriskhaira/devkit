@@ -1,11 +1,18 @@
 Useful aliases for both Linux and Mac.
 
-# Setup .vimrc
+## Setup .vim
 
     cd ~
-    ln -s .vimrc ~/path/to/devkit/.vimrc
+    ln -s ~/path/to/devkit/.vimrc .vimrc 
+    ln -s ~/path/to/devkit/.vim .vim
 
-### Put this in your .profile/.bashrc
+    cd devkit
+    git submodule init
+    git submodule update
+
+## Set up bash
+
+Put this in your .profile/.bashrc:
 
     source ~/path/to/devkit/linux.bashrc
     source ~/path/to/devkit/mac.bashrc
