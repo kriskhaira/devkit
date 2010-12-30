@@ -10,7 +10,7 @@
 
 ## Set up bash
 
-Put this in your .profile/.bashrc:
+Put this in your .profile or .bashrc file:
 
     source ~/path/to/devkit/linux.bashrc
     source ~/path/to/devkit/mac.bashrc
