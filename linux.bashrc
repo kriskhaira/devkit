@@ -26,6 +26,11 @@ alias ap.start='sudo /etc/init.d/apache2 start'
 alias ap.log='tail -f /var/log/apache2/error.log'
 alias mail.log='tail -f /var/log/mail.log'
 
+# MySQL
+alias my.0='/etc/init.d/mysql stop'
+alias my.1='/etc/init.d/mysql start'
+alias my.r'/etc/init.d/mysql restart'
+
 ## Bash helpers ##
 alias '...'='cd ../../../'
 alias '..'='cd ../../'
