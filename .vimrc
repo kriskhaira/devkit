@@ -36,14 +36,16 @@ set shiftwidth=2
 " set autoindent
 " set smartindent
 
-" SET DRUPAL FILES AS PHP
+" SET FILE SYNTAX TYPES
 
 if has("autocmd")
-  " Drupal *.module and *.install files.
   augroup module
+    " Drupal *.module and *.install files.
     autocmd BufRead,BufNewFile *.module set filetype=php
     autocmd BufRead,BufNewFile *.install set filetype=php
     autocmd BufRead,BufNewFile *.test set filetype=php
+    " LESS CSS
+    autocmd BufRead,BufNewFile *.less set filetype=css
   augroup END
 endif
 
