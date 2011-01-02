@@ -15,8 +15,11 @@ devkit is a configuration bundle for vim and bash with:
 
 ## Set up bash
 
-Put this in your .profile or .bashrc file:
+On Linux, put this in ~/.bashrc:
 
     source ~/path/to/devkit/linux.bashrc
+
+On a Mac, put the above and the following in ~/.profile:
+
     source ~/path/to/devkit/mac.bashrc
 
