@@ -35,7 +35,7 @@ alias search='apt-cache search'
 # MySQL
 alias my.0='/etc/init.d/mysql stop'
 alias my.1='/etc/init.d/mysql start'
-alias my.r'/etc/init.d/mysql restart'
+alias my.r='/etc/init.d/mysql restart'
 
 ## Bash helpers ##
 alias '...'='cd ../../../'
