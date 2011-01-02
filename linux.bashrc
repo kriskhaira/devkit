@@ -10,8 +10,9 @@ export EDITOR=vim
 ## UBUNTU/DEBIAN ONLY ##
 LOGS=/var/log
 alias sep='echo "---"'
-alias e='vi /etc/bash.bashrc'
-alias r='source /etc/profile; source ~/.profile'
+# alias e='vi /etc/bash.bashrc'
+alias e='vi ~/devkit/' #works nice with NERD Tree
+alias r='source /etc/profile; source ~/.profile; source~/.bashrc'
 alias eh='vi /etc/hosts'
 alias ep='vi /etc/php5/apache2/php.ini'
 alias vsftpd.r="sudo /etc/init.d/vsftpd restart"
@@ -21,10 +22,15 @@ alias fcgi.stop='killall -9 php5-cgi'
 alias fcgi.start='sudo /etc/init.d/init-fastcgi start'
 alias ap.rs='sudo /etc/init.d/apache2 restart'
 alias ap.rl='sudo /etc/init.d/apache2 reload'
-alias ap.stop='sudo /etc/init.d/apache2 stop'
-alias ap.start='sudo /etc/init.d/apache2 start'
+alias ap.0='sudo /etc/init.d/apache2 stop'
+alias ap.1='sudo /etc/init.d/apache2 start'
 alias ap.log='tail -f /var/log/apache2/error.log'
 alias mail.log='tail -f /var/log/mail.log'
+
+# apt-get
+alias apt='apt-get install'
+alias remove='apt-get remove'
+alias search='apt-cache search'
 
 # MySQL
 alias my.0='/etc/init.d/mysql stop'
