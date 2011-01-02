@@ -1,3 +1,8 @@
+devkit is a configuration bundle for vim and bash with:
+
+  * vim+pathogen+nerdtree and other vim plugins all set up as submodules
+  * lots of bash aliases for LAMP stack sys admin catered towards Drupal, git, Ubuntu and Mac users with some Rails and Python thrown in
+
 ## Set up vim
 
     cd ~
