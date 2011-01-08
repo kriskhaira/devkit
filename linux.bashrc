@@ -25,7 +25,10 @@ alias ap.rl='sudo /etc/init.d/apache2 reload'
 alias ap.0='sudo /etc/init.d/apache2 stop'
 alias ap.1='sudo /etc/init.d/apache2 start'
 alias ap.log='tail -f /var/log/apache2/error.log'
+
+# Communications
 alias mail.log='tail -f /var/log/mail.log'
+alias ir='irssi'
 
 # apt-get
 alias apt='apt-get install'
