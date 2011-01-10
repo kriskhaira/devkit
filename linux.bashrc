@@ -29,6 +29,7 @@ alias ap.log='tail -f /var/log/apache2/error.log'
 # Communications
 alias mail.log='tail -f /var/log/mail.log'
 alias ir='irssi'
+alias wee='weechat-curses'
 
 # apt-get
 alias apt='apt-get install'
