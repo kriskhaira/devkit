@@ -19,7 +19,7 @@ On Linux, put this in ~/.bashrc:
 
     source ~/path/to/devkit/linux.bashrc
 
-On a Mac, put the above and the following in ~/.profile:
+On a Mac, put the above and the following in ~/.bashrc. You can always put it in .profile, but then it won't work in screen:
 
     source ~/path/to/devkit/mac.bashrc
 
