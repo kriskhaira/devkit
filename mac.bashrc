@@ -59,8 +59,9 @@ alias mousespeed='defaults write -g com.apple.mouse.scaling'
 alias ap.1="sudo apachectl start"
 alias ap.0="sudo apachectl stop"
 alias ap.rs="sudo apachectl restart"
-alias ms.start='sudo cd /opt/local ; sudo /opt/local/lib/mysql5/bin/mysqld_safe &' #macports
-alias ms.stop='sudo /opt/local/bin/mysqladmin5 -u root -p shutdown' #macports
+alias mysql.1='mysql.server start'
+alias mysql.0='mysql.server stop'
+alias mysql.rs='mysql.server restart'
 alias isdp="is-drupal"
 
 # PostgreSQL (installed with Homebrew)
