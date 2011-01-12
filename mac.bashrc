@@ -29,6 +29,9 @@ alias l='ls -CFa'
 alias ag='ack'
 alias t="vi ~/Desktop/TODO.txt"
 
+# Networking
+alias checkvpn="netstat -rn | grep 192.168" #check if VPN is working 
+
 #alias svndiff='svn diff --diff-cmd ~/bin/svnopendiffshim.py' 
 alias ss='svn-color status'
 alias svnfmdiff='svn diff --diff-cmd fmdiff' 
