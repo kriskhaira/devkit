@@ -55,7 +55,7 @@ alias mousespeed='defaults write -g com.apple.mouse.scaling'
 # LAMP
 alias ap.1="sudo apachectl start"
 alias ap.0="sudo apachectl stop"
-alias ap.r="sudo apachectl restart"
+alias ap.rs="sudo apachectl restart"
 alias ms.start='sudo cd /opt/local ; sudo /opt/local/lib/mysql5/bin/mysqld_safe &' #macports
 alias ms.stop='sudo /opt/local/bin/mysqladmin5 -u root -p shutdown' #macports
 alias isdp="is-drupal"
