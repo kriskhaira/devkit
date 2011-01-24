@@ -26,6 +26,9 @@ alias ap.0='sudo /etc/init.d/apache2 stop'
 alias ap.1='sudo /etc/init.d/apache2 start'
 alias ap.log='tail -f /var/log/apache2/error.log'
 
+# A/V
+alias loop='mplayer -loop 0 -volume 10' #Plays an audio/video file with loop
+
 # Communications
 alias mail.log='tail -f /var/log/mail.log'
 alias ir='irssi'
