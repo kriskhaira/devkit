@@ -70,6 +70,7 @@ alias v='vim'
 alias v.='vim .'
 alias sv='sudo vim'
 alias ev='vim ~/.vimrc'
+alias em='emacs'
 alias ah='alias -p | ack -C ' #alias help
 
 ##  Drupal ##
