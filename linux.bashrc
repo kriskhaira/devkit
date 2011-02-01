@@ -5,12 +5,11 @@
 ## -----------------------------------------------------
 export HISTCONTROL=erasedups
 export ACK_OPTIONS=--type-set=php=.php,.module,.inc,.install
-export EDITOR=vim
+export EDITOR=emacs
 
 ## UBUNTU/DEBIAN ONLY ##
 LOGS=/var/log
 alias sep='echo "---"'
-# alias e='vi /etc/bash.bashrc'
 alias e='vi ~/devkit/' #works nice with NERD Tree
 alias r='source /etc/profile; source ~/.profile; source ~/.bashrc'
 alias eh='sudo vi /etc/hosts'
