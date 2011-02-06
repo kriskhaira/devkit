@@ -27,7 +27,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CFa'
 alias ag='ack'
-alias t="$EDITOR ~/Desktop/TODO.txt"
 
 # Networking
 alias checkvpn="netstat -rn | grep 192.168" #check if VPN is working 
