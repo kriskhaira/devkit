@@ -101,6 +101,7 @@ alias grm='git status | grep deleted | awk '\''{print $3}'\'' | xargs git rm' #g
 alias gc='git commit -m'
 alias gi='vi .gitignore'
 alias gd='git diff | mate'
+alias gsu='git submodule update'
 
 alias gb='git branch'
 alias gba='git branch -a'
