@@ -5,7 +5,6 @@
 ## -----------------------------------------------------
 export HISTCONTROL=erasedups
 export ACK_OPTIONS=--type-set=php=.php,.module,.inc,.install
-export EDITOR=emacs
 
 ## UBUNTU/DEBIAN ONLY ##
 LOGS=/var/log
@@ -71,6 +70,7 @@ alias sv='sudo vim'
 alias ev='vim ~/.vimrc'
 alias em='emacs'
 alias ah='alias -p | ack -C ' #alias help
+alias a='ack-grep'
 
 ##  Drupal ##
 SAM=sites/all/modules
