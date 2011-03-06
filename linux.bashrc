@@ -146,3 +146,6 @@ alias r.dfl='rake db:fixtures:load'
 alias r.s='ruby script/server'
 alias rg.i='sudo gem install --include-dependencies'
 
+# Rattan
+# ------------------------------------------------------------------------------------------------ #
+alias getrattan='git clone git://github.com/kriskhaira/rattan.git'
