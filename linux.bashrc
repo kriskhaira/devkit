@@ -72,11 +72,14 @@ alias em='emacs'
 alias ah='alias -p | ack -C ' #alias help
 alias a='ack-grep'
 
-##  Drupal ##
+# Drupal & Drush
+# ------------------------------------------------------------------------------------------------ #
+
 SAM=sites/all/modules
 SDF=sites/default/files
 alias .sam='cd $SAM'
 alias d='drush'
+alias dcc='drush cc'
 alias di='drush pm-info'
 alias dmf='o `d dd $0`' #open a module diretory in Finder
 alias ddb="cat sites/default/settings.php | grep 'db_url ='"
