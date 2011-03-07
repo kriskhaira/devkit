@@ -60,12 +60,12 @@ alias djnew='django-admin.py startproject mysite'
 
 # LAMP
 # ------------------------------------------------------------------------------------------------ #
-alias ap.1="sudo apachectl start"
-alias ap.0="sudo apachectl stop"
+alias ap.start="sudo apachectl start"
+alias ap.stop="sudo apachectl stop"
 alias ap.rs="sudo apachectl restart"
-alias mysql.1='mysql.server start'
-alias mysql.0='mysql.server stop'
-alias mysql.rs='mysql.server restart'
+alias my.start='mysql.server start'
+alias my.stop='mysql.server stop'
+alias my.rs='mysql.server restart'
 alias isdp="is-drupal"
 
 # PostgreSQL (Homebrew version)
