@@ -80,6 +80,8 @@ SDF=sites/default/files
 alias .sam='cd $SAM'
 alias d='drush'
 alias dcc='drush cc'
+alias dfu='drush fu -y'
+alias dfr='drush fr -y'
 alias di='drush pm-info'
 alias dmf='o `d dd $0`' #open a module diretory in Finder
 alias ddb="cat sites/default/settings.php | grep 'db_url ='"
