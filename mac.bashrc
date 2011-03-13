@@ -33,6 +33,7 @@ alias setmousespeed='defaults write -g com.apple.mouse.scaling'
 # NETWORKING
 # ------------------------------------------------------------------------------------------------ #
 alias checkvpn="netstat -rn | grep 192.168" #check if VPN is working 
+alias checknet="ifconfig | ack en -A 3"
 
 # SUBVERSION
 # ------------------------------------------------------------------------------------------------ #
