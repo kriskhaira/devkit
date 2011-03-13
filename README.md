@@ -13,8 +13,6 @@ devkit is a collection of useful tools for mac development and ubuntu systems ad
     cd devkit
     git submodule init
     git submodule update
-    
-    ##
 
 ## Set up bash
 
