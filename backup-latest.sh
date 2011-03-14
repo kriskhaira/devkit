@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Renumber the existing backups
-rm ~/backup/latest-2.tar.gz
-mv ~/backup/latest-1.tar.gz ~/backup/latest-2.tar.gz
-mv ~/backup/latest.tar.gz ~/backup/latest-1.tar.gz
+rm -r ~/backup/latest-2
+mv ~/backup/latest-1 ~/backup/latest-2
+mv ~/backup/latest ~/backup/latest-1
+mkdir ~/backup/latest
 
 # Make a latest backup of the public folders
-tar czvf --exclude-from=backup-exclude.txt ~/backup/latest.tar.gz ~/public*
+rsync --delete --exclude-from=backup-exclude.txt ~/public* ~/backup/latest/
