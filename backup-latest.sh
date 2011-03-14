@@ -7,4 +7,5 @@ mv ~/backup/latest ~/backup/latest-1
 mkdir ~/backup/latest
 
 # Make a latest backup of the public folders
-rsync -avpP --delete --exclude-from=backup-exclude.txt ~/public* ~/backup/latest/
+#rsync -avpP --delete --exclude-from=backup-exclude.txt ~/public* ~/backup/latest/
+rsync -avpP --delete ~/public* ~/backup/latest/
