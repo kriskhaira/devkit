@@ -3,7 +3,7 @@
 # Renumber the existing backups
 rm -rf ~/backup/latest-2
 mv ~/backup/latest-1 ~/backup/latest-2
-rsync -apP --delete ~/backup/latest ~/backup/latest-1
+cp -r ~/backup/latest ~/backup/latest-1
 mkdir ~/backup/latest
 
 # Make a latest backup of the public folders
