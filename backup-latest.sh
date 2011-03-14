@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Renumber the existing backups
-rm -r ~/backup/latest-2
+rm -rf ~/backup/latest-2
 mv ~/backup/latest-1 ~/backup/latest-2
 mv ~/backup/latest ~/backup/latest-1
 mkdir ~/backup/latest
