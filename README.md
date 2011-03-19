@@ -31,7 +31,14 @@ Schedule the following with cron on your user
   # Backup files daily at 6am and 10pm PST (9pm and 1pm GMT+8)
   00 6/22 * * *  ~/devkit/backup-latest.sh
   
-  # Archive backups weekly on Sundays, 8am PST (11pm GMT+8)
+  # Make remote backups weekly on Sundays, 8am PST (11pm GMT+8)
   00 8 * * 0 ~/devkit/backup-archive.sh
+  
+Go ahead and copy these files elsewhere to override them
 
-Tip: when having several users on a machine, you should run the daily backup as the user and the weekly backup as root
+Tip: when having several users on a machine, you should run the regular backups as the user and the remote backups as root
+
+Don't depend solely on this for backups. Also consider:
+
+  * disk image backups (Linode has this)
+  * VCS e.g. Git
