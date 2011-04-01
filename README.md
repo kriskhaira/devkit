@@ -26,13 +26,13 @@ On a Mac, put the above and the following in ~/.bashrc. You can always put it in
 
 ## Set up backups on Ubuntu servers
 
-Schedule the following with cron on your user
+Schedule the following with cron on your user 
 
-  # Backup files daily at 6am and 10pm PST (9pm and 1pm GMT+8)
-  00 6/22 * * *  ~/devkit/backup-latest.sh
+    # Backup files daily at 6am and 10pm PST (9pm and 1pm GMT+8)
+    00 6/22 * * *  ~/devkit/backup-latest.sh
   
-  # Make remote backups weekly on Sundays, 8am PST (11pm GMT+8)
-  00 8 * * 0 ~/devkit/backup-archive.sh
+    # Make remote backups weekly on Sundays, 8am PST (11pm GMT+8)
+    00 8 * * 0 ~/devkit/backup-archive.sh
   
 Go ahead and copy these files elsewhere to override them
 
