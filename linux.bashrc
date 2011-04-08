@@ -85,6 +85,7 @@ alias dfr='drush fr -y'
 alias di='drush pm-info'
 alias dmf='o `d dd $0`' #open a module diretory in Finder
 alias ddb="cat sites/default/settings.php | grep 'db_url ='"
+alias dpfiles='find `drush dd %files` -type d -exec sudo chmod 777 {} \;'
 
 # This is the Drupal upgrade script
 # Use it like this ;
