@@ -86,6 +86,7 @@ alias di='drush pm-info'
 alias dmf='o `d dd $0`' #open a module diretory in Finder
 alias ddb="cat sites/default/settings.php | grep 'db_url ='"
 alias dpfiles='find `drush dd %files` -type d -exec chmod 777 {} \;'
+alias dpmg='drush pml | grep' # similar to drush pmi but more fuzzy and simpler
 
 # This is the Drupal upgrade script
 # Use it like this ;
