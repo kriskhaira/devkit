@@ -1,7 +1,7 @@
-devkit is a collection of useful tools for mac development and ubuntu systems administration with:
+devkit is a collection of useful tools for web development and sys admin on OS X and Ubuntu with:
 
-  * a configuration bundle vim+pathogen+nerdtree and other vim plugins all set up as submodules
-  * lots of bash aliases for LAMP stack sys admin catered towards Drupal, git, Ubuntu and Mac users with some Rails and Python thrown in
+  * a configuration bundle for vim+pathogen+nerdtree and other vim plugins set up as git submodules
+  * bash aliases for sys admin using git, Ubuntu, Mac, LAMP, Drupal, Rails and Python
   * backup scripts
 
 ## Set up vim
@@ -16,13 +16,15 @@ devkit is a collection of useful tools for mac development and ubuntu systems ad
 
 ## Set up bash
 
-On Linux, put this in ~/.bashrc:
+Put this in ~/.bashrc for Linux:
 
     source ~/path/to/devkit/linux.bashrc
-
-On a Mac, put the above and the following in ~/.bashrc. You can always put it in .profile, but then it won't work in screen:
+    
+Or for Mac:
 
     source ~/path/to/devkit/mac.bashrc
+
+Putting this in .bashrc instead of .profile will ensure it works in screen
 
 ## Set up backups on Ubuntu servers
 
@@ -38,7 +40,8 @@ Go ahead and copy these files elsewhere to override them
 
 Tip: when having several users on a machine, you should run the regular backups as the user and the remote backups as root
 
-Don't depend solely on this for backups. Also consider:
+This is not your complete backup solution. Also use:
 
-  * disk image backups (Linode has this)
-  * VCS e.g. Git
+  * git
+  * disk image cloning (Linode has this)
+  * backup to your local machine (last ditch effort)
