@@ -40,7 +40,7 @@ alias search='apt-cache search'
 # MySQL
 alias my.stop='/etc/init.d/mysql stop'
 alias my.start='/etc/init.d/mysql start'
-alias my.rs='/etc/init.d/mysql restart'
+alias my.rs='service mysql restart'
 
 ## Bash helpers ##
 alias '...'='cd ../../../'
@@ -107,7 +107,8 @@ alias gl1='echo "#---"; git log --pretty=oneline; echo "#---";'
 alias grm='git status | grep deleted | awk '\''{print $3}'\'' | xargs git rm' #git rm all deleted files
 alias gc='git commit -m'
 alias gi='vi .gitignore'
-alias gd='git diff | mate'
+alias gd='git diff'
+alias gdt='git difftool'
 alias gsu='git submodule update'
 
 alias gb='git branch'

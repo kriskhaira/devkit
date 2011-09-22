@@ -39,7 +39,7 @@ alias checknet="ifconfig | ack en -A 3"
 # ------------------------------------------------------------------------------------------------ #
 #alias svndiff='svn diff --diff-cmd ~/bin/svnopendiffshim.py' 
 alias ss='svn-color status'
-alias svnfmdiff='svn diff --diff-cmd fmdiff' 
+alias svn-fm='svn diff --diff-cmd svn-fm' 
 alias svnrsync='rsync -av --exclude=.svn --delete'
 
 # RAILS
