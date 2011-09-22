@@ -16,6 +16,10 @@ Add to the end of .bashrc
     
 We use .bashrc instead of .profile to ensure it works in screen
 
+Start using it:
+
+    source ~/.bashrc
+
 ## Set up vim
 
     cd ~
