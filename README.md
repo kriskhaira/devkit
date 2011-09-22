@@ -4,7 +4,7 @@ devkit is a collection of useful tools for web development and sys admin on OS X
   * bash aliases for sys admin using git, Ubuntu, Mac, LAMP, Drupal, Rails and Python
   * backup scripts
 
-## Set up bash
+## Setup
 
     git clone git://github.com/kriskhaira/devkit.git .devkit
     vi ~/.bashrc
