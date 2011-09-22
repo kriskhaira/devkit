@@ -6,7 +6,7 @@ devkit is a collection of useful tools for web development and sys admin on OS X
 
 ## Setup
 
-    git clone git://github.com/kriskhaira/devkit.git .devkit
+    git clone git://github.com/kriskhaira/devkit.git ~/.devkit
     vi ~/.bashrc
     
 Add to the end of .bashrc
