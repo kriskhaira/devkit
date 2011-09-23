@@ -75,8 +75,8 @@ alias a='ack-grep'
 # Drupal & Drush
 # ------------------------------------------------------------------------------------------------ #
 
-SAM=sites/all/modules
-SDF=sites/default/files
+DM=sites/all/modules
+DF=sites/default/files
 alias .sam='cd $SAM'
 alias d='drush'
 alias dcc='drush cc'
