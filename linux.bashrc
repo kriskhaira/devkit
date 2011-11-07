@@ -63,6 +63,7 @@ alias xx='echo; echo "----------------------------------------------------------
 alias 755folders="find . ./ -type d -exec chmod 755 {} \;"
 alias 644files="find . ./ -type f -exec chmod 644 {} \;"
 alias 777folders="find . ./ -type d -exec chmod 777 {} \;"
+alias 777files="find . ./ -type f -exec chmod 777 {} \;"
 alias conn='netstat -nl | grep tcp4' #Active connections
 alias v='vim'
 alias v.='vim .'
@@ -83,7 +84,7 @@ alias dcc='drush cc'
 alias dfu='drush fu -y'
 alias dfr='drush fr -y'
 alias di='drush pm-info'
-alias dmf='o `d dd $0`' #open a module diretory in Finder
+alias dmf='open sites/default/modules/`$0`' #open a module directory in Finder
 alias ddb="cat sites/default/settings.php | grep 'db_url ='"
 alias dpfiles='find `drush dd %files` -type d -exec chmod 777 {} \;'
 alias dpmg='drush pml | grep' # similar to drush pmi but more fuzzy and simpler

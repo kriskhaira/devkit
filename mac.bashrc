@@ -42,6 +42,10 @@ alias ss='svn-color status'
 alias svn-fm='svn diff --diff-cmd svn-fm' 
 alias svnrsync='rsync -av --exclude=.svn --delete'
 
+# PHP
+# ------------------------------------------------------------------------------------------------ #
+alias pyrus='sudo php /usr/lib/php/pyrus.phar'
+
 # RAILS
 # ------------------------------------------------------------------------------------------------ #
 alias r.sq='o db/development.sqlite3' #opens the development SQLite db in your Mac's default sqlite editor
