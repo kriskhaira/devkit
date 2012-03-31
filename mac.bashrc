@@ -1,7 +1,6 @@
 ## ------------------------------------------
 ## OVERRIDE THE LINUX BASH.BASHRC
 ## - Go ahead and use this for your Mac
-## - Tested on Snow Leopard
 ## ------------------------------------------
 unset MAILCHECK
 export CLICOLOR=1
