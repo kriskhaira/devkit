@@ -1,7 +1,6 @@
 ## -----------------------------------------------------
 ## SERVER - /ETC/BASH.BASHRC (UBUNTU/DEBIAN)
 ## Go ahead and use this for your servers 
-## - Kris Khaira (www.KedaiRuncit.org)
 ## -----------------------------------------------------
 export HISTCONTROL=erasedups
 export ACK_OPTIONS=--type-set=php=.php,.module,.inc,.install
@@ -110,6 +109,7 @@ alias gc='git commit -m'
 alias gi='vi .gitignore'
 alias gd='git diff'
 alias gdt='git difftool'
+alias grao='git remote add origin'
 alias gsu='git submodule update'
 
 alias gb='git branch'
