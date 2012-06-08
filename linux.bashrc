@@ -100,8 +100,7 @@ alias gpo='git push -v origin' #push to origin all branches
 alias gpom='git push -v origin master' #push to origin the master branch
 alias ga='git add'
 alias gu='git pull'
-alias gu.pm='git pull projectlocker master'
-alias gu.um='git pull unfuddle master'
+alias guom='git pull origin master'
 alias gl='git log'
 alias gl1='echo "#---"; git log --pretty=oneline; echo "#---";'
 alias grm='git status | grep deleted | awk '\''{print $3}'\'' | xargs git rm' #git rm all deleted files
