@@ -72,6 +72,7 @@ alias ev='vim ~/.vimrc'
 alias em='emacs'
 alias ah='alias -p | ack -C ' #alias help
 alias a='ack-grep'
+alias cphere='pwd | pbcopy' #copy the current path
 
 # Drupal & Drush
 # ------------------------------------------------------------------------------------------------ #
