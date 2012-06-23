@@ -1,6 +1,5 @@
 ## -----------------------------------------------------
 ## SERVER - /ETC/BASH.BASHRC (UBUNTU/DEBIAN)
-## Go ahead and use this for your servers 
 ## -----------------------------------------------------
 export HISTCONTROL=erasedups
 export ACK_OPTIONS=--type-set=php=.php,.module,.inc,.install
