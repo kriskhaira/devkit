@@ -31,14 +31,14 @@ alias setmousespeed='defaults write -g com.apple.mouse.scaling'
 
 # NETWORKING
 # ------------------------------------------------------------------------------------------------ #
-alias checkvpn="netstat -rn | grep 192.168" #check if VPN is working 
+alias checkvpn="netstat -rn | grep 192.168" #check if VPN is working
 alias checknet="ifconfig | ack en -A 3"
 
 # SUBVERSION
 # ------------------------------------------------------------------------------------------------ #
-#alias svndiff='svn diff --diff-cmd ~/bin/svnopendiffshim.py' 
+#alias svndiff='svn diff --diff-cmd ~/bin/svnopendiffshim.py'
 alias ss='svn-color status'
-alias svn-fm='svn diff --diff-cmd svn-fm' 
+alias svn-fm='svn diff --diff-cmd svn-fm'
 alias svnrsync='rsync -av --exclude=.svn --delete'
 
 # PHP
