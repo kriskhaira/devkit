@@ -70,6 +70,7 @@ alias ap.rs="sudo apachectl restart"
 alias my.start='mysql.server start'
 alias my.stop='mysql.server stop'
 alias my.rs='mysql.server restart'
+alias mamp.log='multitail -s 3 /Applications/MAMP/logs/apache_error.log /Applications/MAMP/logs/mysql_error_log.err /Applications/MAMP/logs/php_error.log'
 alias isdp="is-drupal"
 
 # PostgreSQL (Homebrew version)
