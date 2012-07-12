@@ -55,6 +55,7 @@ alias r.sq='o db/development.sqlite3' #opens the development SQLite db in your M
 PYTHON_PACKAGES='/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages'
 alias px='source $PYTHON_PACKAGES/pinax/bin/activate'
 alias dj='python manage.py'
+alias my.rs='mysql.server restart'
 alias djrun='python manage.py runserver'
 alias djrun.vf='python manage.py runserver 172.16.236.1:8001'
 alias djsyncdb='python manage.py syncdb'
@@ -69,7 +70,6 @@ alias ap.stop="sudo apachectl stop"
 alias ap.rs="sudo apachectl restart"
 alias my.start='mysql.server start'
 alias my.stop='mysql.server stop'
-alias my.rs='mysql.server restart'
 alias mamp.log='multitail -s 3 /Applications/MAMP/logs/apache_error.log /Applications/MAMP/logs/mysql_error_log.err /Applications/MAMP/logs/php_error.log'
 alias isdp="is-drupal"
 
