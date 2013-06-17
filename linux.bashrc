@@ -73,27 +73,6 @@ alias ah='alias -p | ack -C ' #alias help
 alias a='ack-grep'
 alias cphere='pwd | pbcopy' #copy the current path
 
-# Drupal & Drush
-# ------------------------------------------------------------------------------------------------ #
-
-DM=sites/all/modules
-DF=sites/default/files
-alias .sam='cd $SAM'
-alias d='drush'
-alias dcc='drush cc'
-alias dfu='drush fu -y'
-alias dfr='drush fr -y'
-alias di='drush pm-info'
-alias dmf='open sites/all/modules/`$0`' #open a module directory in Finder
-alias ddb="cat sites/default/settings.php | grep 'db_url ='"
-alias dpfiles='find `drush dd %files` -type d -exec chmod 777 {} \;'
-alias dpmg='drush pml | grep' # similar to drush pmi but more fuzzy and simpler
-
-# This is the Drupal upgrade script
-# Use it like this ;
-# dpupgrade downloadedpath/ destinationpath/
-alias dpupgrade='echo "Press any key to CONFIRM. Press Ctrl+C to Cancel"; read; rsync -avH --exclude=_* --exclude=deploy --exclude=sites --exclude=.git* --delete'
-
 # Git
 # ------------------------------------------------------------------------------------------------ #
 
