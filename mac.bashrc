@@ -80,6 +80,11 @@ alias isdp="is-drupal"
 alias php.stop="sudo killall -9 php-fpm"
 alias nx.rs="sudo nginx -s stop; sudo killall -9 php-fpm; launchctl load ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist; sudo nginx"
 alias nx.log="tail -f /var/log/nginx/php-fpm.log"
+
+# SUBLIME TEXT 2
+# ------------------------------------------------------------------------------------------------ #
+alias subp="o *.sublime-project"
+
 # REDIS
 # ---------------------------------------------------------------------------------------------------
 alias redis.start="redis-server /usr/local/etc/redis.conf"
