@@ -84,7 +84,7 @@ alias dcc='drush cc'
 alias dfu='drush fu -y'
 alias dfr='drush fr -y'
 alias di='drush pm-info'
-alias dmf='open sites/default/modules/`$0`' #open a module directory in Finder
+alias dmf='open sites/all/modules/`$0`' #open a module directory in Finder
 alias ddb="cat sites/default/settings.php | grep 'db_url ='"
 alias dpfiles='find `drush dd %files` -type d -exec chmod 777 {} \;'
 alias dpmg='drush pml | grep' # similar to drush pmi but more fuzzy and simpler
