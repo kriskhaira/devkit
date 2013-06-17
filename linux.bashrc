@@ -94,7 +94,9 @@ alias dpmg='drush pml | grep' # similar to drush pmi but more fuzzy and simpler
 # dpupgrade downloadedpath/ destinationpath/
 alias dpupgrade='echo "Press any key to CONFIRM. Press Ctrl+C to Cancel"; read; rsync -avH --exclude=_* --exclude=deploy --exclude=sites --exclude=.git* --delete'
 
-## Git ##
+# Git
+# ------------------------------------------------------------------------------------------------ #
+
 alias gs='git status'
 alias gp='git push -v'
 alias gpo='git push -v origin' #push to origin all branches
@@ -119,7 +121,9 @@ alias gn='nub'
 alias gco='git checkout'
 alias gg='git gui'
 
-## Subversion ##
+# Subversion
+# ------------------------------------------------------------------------------------------------ #
+
 export SVN_EDITOR=vi
 alias sup='echo ""; date; svn update; echo ""'
 alias sexternal='svn propedit svn:externals .'
