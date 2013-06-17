@@ -74,6 +74,12 @@ alias mamp.log='multitail -i /Applications/MAMP/logs/apache_error.log -i /Applic
 alias mamp.log.v='multitail -s 3 /Applications/MAMP/logs/apache_error.log /Applications/MAMP/logs/mysql_error_log.err /Applications/MAMP/logs/php_error.log'
 alias isdp="is-drupal"
 
+# HOMEBREW NGINX & PHP
+# ------------------------------------------------------------------------------------------------ #
+
+alias php.stop="sudo killall -9 php-fpm"
+alias nx.rs="sudo nginx -s stop; sudo killall -9 php-fpm; launchctl load ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist; sudo nginx"
+alias nx.log="tail -f /var/log/nginx/php-fpm.log"
 # PostgreSQL (Homebrew version)
 # ------------------------------------------------------------------------------------------------ #
 alias pg.1="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
