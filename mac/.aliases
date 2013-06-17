@@ -1,0 +1,13 @@
+# FOR MAC
+
+CONFIGPATH='~/Dropbox/config'
+
+## EDIT SETTINGS
+# ------------------------------------------------------------------------------------------------
+
+# EDIT ALL MY SETTINGS
+alias config='subl $CONFIGPATH'
+
+## DRUPAL
+# ------------------------------------------------------------------------------------------------
+alias dmf='open sites/all/modules/`$0`' #open a module directory in Finder

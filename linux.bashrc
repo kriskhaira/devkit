@@ -85,7 +85,6 @@ alias gu='git pull'
 alias guom='git pull origin master'
 alias gl='git log'
 alias gl1='echo "#---"; git log --pretty=oneline; echo "#---";'
-alias grm='git status | grep deleted | awk '\''{print $3}'\'' | xargs git rm' #git rm all deleted files
 alias gc='git commit -m'
 alias gi='vi .gitignore'
 alias gd='git diff'
