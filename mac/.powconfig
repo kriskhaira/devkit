@@ -1,0 +1,5 @@
+export POW_WORKERS=1
+export PATH="/Users/kriskhaira/.rbenv/shims:/Users/kriskhaira/.rbenv/bin:$PATH"
+export POW_DST_PORT=88
+export POW_DOMAINS=dev,pow
+export POW_EXT_DOMAINS=pagekite.me

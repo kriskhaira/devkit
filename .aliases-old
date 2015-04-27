@@ -7,7 +7,6 @@ export ACK_OPTIONS=--type-set=php=.php,.module,.inc,.install
 ## UBUNTU/DEBIAN ONLY ##
 LOGS=/var/log
 alias sep='echo "---"'
-alias e='vi ~/devkit/' #works nice with NERD Tree
 alias r='source /etc/profile; source ~/.profile; source ~/.bashrc'
 alias eh='sudo vi /etc/hosts'
 alias ep='vi /etc/php5/apache2/php.ini'
@@ -27,8 +26,6 @@ alias loop='mplayer -loop 0 -volume 10' #Plays an audio/video file with loop
 
 # Communications
 alias mail.log='tail -f /var/log/mail.log'
-alias ir='irssi'
-alias wee='weechat-curses'
 
 # apt-get
 alias apt='apt-get install'
@@ -46,23 +43,13 @@ alias '..'='cd ../../'
 alias h='history'
 alias c='clear'
 alias untar='tar zxvf'
-alias flush='sudo /etc/init.d/networking restart'
 alias ip='ifconfig | ack "192|10.0"'
 alias archive.w='wget -k -m -r'
 alias archive.c='wget -k -m -r'
-alias dl='curl -C - -O'
 alias dict='curl dict://dict.org/d:'
-alias showpubkey='cat ~/.ssh/id_rsa.pub'
-alias copypubkey='cat ~/.ssh/id_rsa.pub | pbcopy'
-alias pastepubkey='mkdir ~/.ssh; chmod 700 ~/.ssh; cd ~/.ssh; touch authorized_keys; chmod 600 authorized_keys; vi authorized_keys'
-alias ssh.ls='cd ~/.ssh/; ls -alF'
 alias noexe='sudo rm -f *.exe' #Removes all *.exe files in a folder. Good for removing viruses from thumbdrives.
 alias phpinfo='echo "<?php phpinfo(); ?>" | sudo tee -a info.php'
 alias xx='echo; echo "-------------------------------------------------------------------"; echo'
-alias 755folders="find . ./ -type d -exec chmod 755 {} \;"
-alias 644files="find . ./ -type f -exec chmod 644 {} \;"
-alias 777folders="find . ./ -type d -exec chmod 777 {} \;"
-alias 777files="find . ./ -type f -exec chmod 777 {} \;"
 alias conn='netstat -nl | grep tcp4' #Active connections
 alias v='vim'
 alias v.='vim .'
@@ -71,7 +58,6 @@ alias ev='vim ~/.vimrc'
 alias em='emacs'
 alias ah='alias -p | ack -C ' #alias help
 alias a='ack-grep'
-alias cphere='pwd | pbcopy' #copy the current path
 
 # Git
 # ------------------------------------------------------------------------------------------------ #
@@ -85,8 +71,6 @@ alias gu='git pull'
 alias guom='git pull origin master'
 alias gl='git log'
 alias gl1='echo "#---"; git log --pretty=oneline; echo "#---";'
-alias gc='git commit -m'
-alias gi='vi .gitignore'
 alias gd='git diff'
 alias gdt='git difftool'
 alias grao='git remote add origin'
@@ -136,12 +120,3 @@ alias r.dm='rake db:migrate'
 alias r.dfl='rake db:fixtures:load'
 alias r.s='ruby script/server'
 alias rg.i='sudo gem install --include-dependencies'
-
-# CSS, LESS, SASS, CoffeeScript
-# ------------------------------------------------------------------------------------------------ #
-alias cw='cake watch'
-
-
-# Rattan
-# ------------------------------------------------------------------------------------------------ #
-alias getrattan='git clone git://github.com/kriskhaira/rattan.git'

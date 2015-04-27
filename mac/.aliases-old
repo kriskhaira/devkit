@@ -8,10 +8,6 @@ export LSCOLORS="ExFxCxDxBxegedabagacad"
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 alias flush='sudo dscacheutil -flushcache'
 alias port.start='sudo port selfupdate; sudo port upgrade outdated;'
-alias k='killall'
-alias kd='killall Dock'
-alias kf='killall Finder'
-alias o='open'
 alias m='mate'
 alias mp='echo ""; pwgen -c -n -s -B -y 14 -1 10; echo""'
 #This fixes the blue tint problem as described here: http://tinyurl.com/mac-blue-tint
@@ -28,11 +24,6 @@ alias a='ack'
 alias cpu='top -FR -o cpu -n 10'
 alias getmousespeed='defaults read -g com.apple.mouse.scaling'
 alias setmousespeed='defaults write -g com.apple.mouse.scaling'
-
-# NETWORKING
-# ------------------------------------------------------------------------------------------------ #
-alias checkvpn="netstat -rn | grep 192.168" #check if VPN is working
-alias checknet="ifconfig | ack en -A 3"
 
 # SUBVERSION
 # ------------------------------------------------------------------------------------------------ #
@@ -55,7 +46,6 @@ alias r.sq='o db/development.sqlite3' #opens the development SQLite db in your M
 PYTHON_PACKAGES='/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages'
 alias px='source $PYTHON_PACKAGES/pinax/bin/activate'
 alias dj='python manage.py'
-alias my.rs='mysql.server restart'
 alias djrun='python manage.py runserver'
 alias djrun.vf='python manage.py runserver 172.16.236.1:8001'
 alias djsyncdb='python manage.py syncdb'
@@ -73,17 +63,6 @@ alias my.stop='mysql.server stop'
 alias mamp.log='multitail -i /Applications/MAMP/logs/apache_error.log -i /Applications/MAMP/logs/mysql_error_log.err -i /Applications/MAMP/logs/php_error.log'
 alias mamp.log.v='multitail -s 3 /Applications/MAMP/logs/apache_error.log /Applications/MAMP/logs/mysql_error_log.err /Applications/MAMP/logs/php_error.log'
 alias isdp="is-drupal"
-
-# HOMEBREW NGINX & PHP
-# ------------------------------------------------------------------------------------------------ #
-
-alias php.stop="sudo killall -9 php-fpm"
-alias nx.rs="sudo nginx -s stop; sudo killall -9 php-fpm; launchctl load ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist; sudo nginx"
-alias nx.log="tail -f /var/log/nginx/php-fpm.log"
-
-# SUBLIME TEXT 2
-# ------------------------------------------------------------------------------------------------ #
-alias subp="o *.sublime-project"
 
 # REDIS
 # ---------------------------------------------------------------------------------------------------

@@ -1,13 +1,101 @@
 # FOR MAC
 
-CONFIGPATH='~/Dropbox/config'
+# *** BASIC CONFIG STUFF RELATED TO THIS FOLDER ***
+# ------------------------------------------------------------------------------------------------ #
+alias e="open ~/Dropbox/config.sublime-project"
+
+## GITX
+# ------------------------------------------------------------------------------------------------
+alias gx='nocorrect gitx'
+alias st='stree'
+
+## OS/BASH STUFF
+# ------------------------------------------------------------------------------------------------
+alias ll="ls -al"
+alias k='killall'
+alias kd='killall Dock'
+alias kf='killall Finder'
+alias o='open'
+# quickly kill apps which are notorious for taking up RAM and CPU resources
+alias killspotlight='sudo killall -9 Skype'
+alias killedgeinspect='sudo killall -9 EdgeInspect'
+alias killmagicprefs='sudo killall -9 MagicPrefs'
+alias killskype='sudo killall -9 Skype'
+alias panickill='killspotlight; killedgeinspect; killmagicprefs; killskype'
+alias ok='terminal-notifier -message OK; say -v Cellos "Deployment completed"'
+alias tn='terminal-notifier -message'
+
+## NETWORK STUFF
+# ------------------------------------------------------------------------------------------------
+alias dnsrs='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+alias vpncheck="netstat -rn | grep 192.168" #check if VPN is working
+alias netcheck="ifconfig | ag en -A 3"
+alias fwd="forward"
+alias wifirs="sudo ifconfig en0 down; sudo ifconfig en0 up"
+alias en1rs="sudo ifconfig en1 down; sudo ifconfig en1 up"
 
 ## EDIT SETTINGS
 # ------------------------------------------------------------------------------------------------
-
-# EDIT ALL MY SETTINGS
 alias config='subl $CONFIGPATH'
 
 ## DRUPAL
 # ------------------------------------------------------------------------------------------------
+export DRUSH_PHP='/usr/local/bin/php'
 alias dmf='open sites/all/modules/`$0`' #open a module directory in Finder
+alias dopendefault='open sites/default' #open the default directory in Finder
+alias dopensites='open sites' #open the default directory in Finder
+
+## GUARD
+# ------------------------------------------------------------------------------------------------
+alias gu="bundle exec guard"
+
+# HOMEBREW NGINX & PHP & MYSQL STACK
+# ------------------------------------------------------------------------------------------------ #
+
+alias phpstop="sudo killall -9 php-fpm"
+alias phpstart="lunchy start php"
+alias nxstop='sudo nginx -s stop; sudo killall -9 php-fpm'
+alias nxstart='phpstart; sudo nginx'
+alias nxrl='sudo nginx -s reload'
+alias nxrs='nxstop; nxstart'
+alias nxlog="tail -f /var/log/nginx/php-fpm.log"
+alias mystart="mysql.server start"
+alias mystop="mysql.server stop"
+alias myrs="mystop; mystart"
+
+
+# MONGODB
+# ------------------------------------------------------------------------------------------------ #
+alias mongolog="tail -f /usr/local/var/log/mongodb/mongo.log"
+
+# RUBY
+# ------------------------------------------------------------------------------------------------ #
+alias rbenv="nocorrect rbenv"
+alias rerh="rbenv rehash"
+alias rbkill='sudo killall -9 ruby'
+alias brails="bundle exec rails"
+alias brc="bundle exec rails c"
+alias unir="unicorn_rails"
+alias powkill='sudo killall -9 pow'
+alias powrl='powkill'
+# alias powrs="curl get.pow.cx/uninstall.sh | sh; curl get.pow.cx | sh"
+alias powrs="powder down; powder up"
+
+# VIDEO
+# ------------------------------------------------------------------------------------------------ #
+alias ffmpeg='nocorrect ffmpeg'
+
+# SUBLIME TEXT
+# ------------------------------------------------------------------------------
+subp() {
+  # open "$1".sublime-project
+  ## open file of the same name
+  # open "./`echo $PWD | sed 's!.*/!!'`".sublime-project
+  ## open any sublime project file
+  open *.sublime-project
+}
+
+# PRODUCTIVITY
+# ------------------------------------------------------------------------------
+
+# alias quitims

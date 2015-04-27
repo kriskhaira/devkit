@@ -40,14 +40,28 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git bundler rake rails)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/sbin
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-export PATH=$PATH:~/bin
-
+# Tip: left-most folders take precedence
+# -------------------------------------------------------------------------------------
+# Default Mac OS X binaries
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:$PATH #removed /usr/local/bin from here
+# my local binaries
+export PATH=~/bin:$PATH
+# homebrew
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+# ruby
+export RBENV_ROOT=$rbenvdir
+export PATH=${rbenvdir}/bin:$PATH
+eval "$(rbenv init - zsh)"
+# node
+export PATH=/usr/local/share/npm/bin:$PATH
+# Custom aliases
 source $HOME/Dropbox/config/devkit/.aliases
 source $HOME/Dropbox/config/devkit/mac/.aliases
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

@@ -1,18 +1,12 @@
 " Needed on some linux distros.
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
-filetype off 
+filetype off
 
 " Pathogen: Load all plugins in the bundle directory
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
-set number
-nnoremap <F2> :set nonumber!<CR>
 
-"store lots of :cmdline history
-set history=1000
-
-set showmode    "show current mode down the bottom
 
 set nowrap      "dont wrap lines
 " set linebreak   "wrap lines at convenient points
@@ -26,7 +20,6 @@ set nohlsearch  "Turn off highlighting when done searching:w
 " Use the OSX clipboard
 set clipboard=unnamed
 
-set ruler
 set expandtab
 set softtabstop=2
 set tabstop=2

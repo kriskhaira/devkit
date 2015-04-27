@@ -1,0 +1,22 @@
+###[ Current settings for pagekite.py v0.5.6c. ]#########
+#
+## NOTE: This file may be rewritten/reordered by pagekite.py.
+#
+
+##[ Default kite and account details ]##
+kitename   = kriskhaira.pagekite.me
+kitesecret = dx294a6f3zzc8828a4bkxbk8dexae4a8
+
+##[ Front-end settings: use pagekite.net defaults ]##
+defaults
+
+##[ Back-ends and local services ]##
+service_on  = http:mubi-kk.pagekite.me         : localhost:80      : @kitesecret
+service_on  = http:tr-mubi-kk.pagekite.me  : localhost:80      : @kitesecret
+
+
+##[ Miscellaneous settings ]##
+savefile = /Users/kriskhaira/.pagekite.rc
+
+###[ End of pagekite.py configuration ]#########
+END
