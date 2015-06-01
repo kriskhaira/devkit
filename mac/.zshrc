@@ -47,6 +47,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 # Tip: left-most folders take precedence
 # -------------------------------------------------------------------------------------
+
+export EDITOR="vim"
+
+#
 # Default Mac OS X binaries
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:$PATH #removed /usr/local/bin from here
 # my local binaries
