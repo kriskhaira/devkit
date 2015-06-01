@@ -9,7 +9,7 @@ alias e="open ~/Dropbox/config.sublime-project"
 alias gx='nocorrect gitx'
 alias st='stree'
 
-## OS/BASH STUFF
+## SHELL STUFF
 # ------------------------------------------------------------------------------------------------
 alias ll="ls -al"
 alias k='killall'
@@ -22,8 +22,15 @@ alias killedgeinspect='sudo killall -9 EdgeInspect'
 alias killmagicprefs='sudo killall -9 MagicPrefs'
 alias killskype='sudo killall -9 Skype'
 alias panickill='killspotlight; killedgeinspect; killmagicprefs; killskype'
-alias ok='terminal-notifier -message OK; say -v Cellos "Deployment completed"'
 alias tn='terminal-notifier -message'
+
+## OS X NOTIFICATIONS
+# ------------------------------------------------------------------------------------------------
+# terminal-notifier is slower than osascript -e
+# alias ok='terminal-notifier -message OK; say -v Cellos "Completed"'
+alias ok="osascript -e 'display notification \"Process completed\" with title \"Done\"'"
+alias deployed="osascript -e 'display notification \"Deployment complete\" with title \"Done\"'"
+
 
 ## NETWORK STUFF
 # ------------------------------------------------------------------------------------------------
