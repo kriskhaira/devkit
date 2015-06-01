@@ -238,7 +238,6 @@ alias zec='zeus c'
 # ------------------------------------------------------------------------------
 
 function showjson() {
-  curl -s $1 | underscore print --color
+  http $1
 }
-# alias showjson=showJsonFunction
 
