@@ -124,6 +124,12 @@ alias gfinishandfuckfeature='gfffthis && gfuckfeature'
 alias gfr='git flow release'
 alias gmnoff='git merge --no-ff'
 
+# Start and finish new release
+function gfrsf() {
+  echo "Starting and finishing new release"
+  git flow release start $1
+  git flow release finish $1
+}
 
 
 # NETWORKING
